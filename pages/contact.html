@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontaktid – TarkLend</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="custom-cursor">
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="page-bg" aria-hidden="true"></div>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="header-top">
+        <a href="../index.html" class="logo-link" aria-label="TarkLend avaleht">
+          <img src="../images/logo.png" alt="TarkLend" class="logo-img" width="60" height="20">
+        </a>
+      </div>
+      <div class="header-bar">
+        <nav class="nav" aria-label="Peamine navigatsioon">
+          <a href="../index.html" class="nav-link" data-i18n="nav.home">Avaleht</a>
+          <a href="#meist" class="nav-link" data-i18n="nav.about">Meist</a>
+          <a href="#teenused" class="nav-link" data-i18n="nav.services">Teenused</a>
+          <a href="#hinnad" class="nav-link" data-i18n="nav.prices">Hinnad</a>
+          <a href="#uudised" class="nav-link" data-i18n="nav.news">Uudised</a>
+          <a href="contact.html" class="nav-link nav-link--active" data-i18n="nav.contact">Kontaktid</a>
+        </nav>
+        <div class="lang-wrap">
+          <button type="button" class="lang-trigger" aria-expanded="false" aria-haspopup="true" aria-label="Vali keel" id="lang-trigger">
+            <span class="lang-trigger-label">ET</span>
+            <span class="lang-trigger-icon" aria-hidden="true"></span>
+          </button>
+          <div class="lang-dropdown" id="lang-dropdown" role="listbox" aria-label="Keelte valik">
+            <button type="button" class="lang-option" role="option" data-lang="et" tabindex="-1">Eesti</button>
+            <button type="button" class="lang-option" role="option" data-lang="ru" tabindex="-1">Русский</button>
+            <button type="button" class="lang-option" role="option" data-lang="en" tabindex="-1">English</button>
+            <button type="button" class="lang-option" role="option" data-lang="uk" tabindex="-1">Українська</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main main--contact">
+      <h1 class="contact-title" data-i18n="contact.title">Kontaktid</h1>
+      <div class="contact-page">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            </span>
+            <div>
+              <span class="contact-label" data-i18n="contact.hoursLabel">Tööaeg:</span>
+              <span class="contact-value" data-i18n="contact.hours">E – R, 12.30 – 18.30</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </span>
+            <div>
+              <span class="contact-label" data-i18n="contact.phoneLabel">Telefon:</span>
+              <span class="contact-value contact-value--phone">
+                <button type="button" class="contact-phone-btn" id="contact-phone-btn" data-i18n="contact.viewNumber">Посмотреть номер</button>
+                <a href="#" class="contact-phone-link" id="contact-phone-link" style="display: none;"></a>
+              </span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </span>
+            <div>
+              <span class="contact-label" data-i18n="contact.emailLabel">E-post:</span>
+              <a href="mailto:tarklend@mail.ee" class="contact-value contact-value--link">tarklend@mail.ee</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </span>
+            <div>
+              <span class="contact-label" data-i18n="contact.addressLabel">Aadress:</span>
+              <span class="contact-value" data-i18n="contact.address">Kesk pst 9, Sillamäe (2. korrus)</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map-wrap">
+          <iframe
+            class="contact-map"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=27.765%2C59.388%2C27.79%2C59.398&layer=mapnik&marker=59.39270%2C27.77751564195324"
+            title="TarkLend – Viru pst 6, Sillamäe"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+          <a href="https://www.openstreetmap.org/?mlat=59.39288&amp;mlon=27.77751564195324#map=16/59.39288/27.777516" class="contact-map-link" target="_blank" rel="noopener noreferrer" data-i18n="contact.openMap">Ava kaardil</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-contact">
+        <a href="https://www.facebook.com/profile.php?id=61583585565870" class="footer-icon" target="_blank" rel="noopener noreferrer" aria-label="TarkLend Facebook">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/tark_lend" class="footer-icon" target="_blank" rel="noopener noreferrer" aria-label="TarkLend Instagram">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="mailto:tarklend@mail.ee" class="footer-icon" aria-label="Kirjuta meile: tarklend@mail.ee">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+      <div class="footer-legal">
+        <p class="footer-company">Tarklend OÜ · Registrikood 17453680</p>
+        <p class="footer-copy">© TarkLend</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/locales.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
