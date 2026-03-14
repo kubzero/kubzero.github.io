@@ -63,14 +63,20 @@ body {
   flex: 1 0 auto;
 }
 
-/* Child-friendly animated background */
+/* Background + pattern (pattern from /images/pattern.png), no animation */
 .page-bg {
   position: fixed;
   inset: 0;
   z-index: 0;
-  background: linear-gradient(165deg, #fdf8f4 0%, #fceee6 35%, #fae5d9 70%, #fdf8f4 100%);
-  background-size: 200% 200%;
-  animation: bgGradient 18s ease-in-out infinite;
+  background-color: #fdf8f4;
+  /* Layer order: gradient on top (semi-transparent so pattern shows), pattern tiled behind */
+  background-image:
+    linear-gradient(165deg, rgba(253, 248, 244, 0.65) 0%, rgba(252, 238, 230, 0.65) 35%, rgba(250, 229, 217, 0.65) 70%, rgba(253, 248, 244, 0.65) 100%),
+    url('../images/pattern.png');
+  /* PRESET: pattern tile size – smaller = denser, larger = bigger tiles. e.g. 200px dense, 500px bigger */
+  background-size: 100% 100%, 400px 400px;
+  background-position: 0 0, 0 0;
+  background-repeat: no-repeat, repeat;
   overflow: hidden;
   pointer-events: none;
 }
@@ -102,11 +108,6 @@ body {
   right: -5%;
   animation-delay: -8s;
   animation-duration: 25s;
-}
-
-@keyframes bgGradient {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
 }
 
 @keyframes float {
