@@ -1,26 +1,45 @@
 /**
- * Contact page: phone number reveal (obfuscated so number is not stored in plain text).
- * Number is built from a character-code sequence at runtime.
+ * Contact page: phone and email reveal (obfuscated – not stored as plain text).
+ * Values are built at runtime from split character-code arrays.
  */
 (function () {
   'use strict';
 
-  /* eslint-disable no-unused-vars */
-  var _0x = [0x2b, 0x33, 0x37, 0x32, 0x35, 0x35, 0x34, 0x36, 0x32, 0x35, 0x32];
-  function _d() {
-    return _0x.map(function (c) { return String.fromCharCode(c); }).join('');
+  /* phone: char codes in two segments */
+  var _a = [0x2b, 0x33, 0x37, 0x32, 0x35];
+  var _b = [0x35, 0x34, 0x36, 0x32, 0x35, 0x32];
+  function _ph() {
+    return _a.concat(_b).map(function (c) { return String.fromCharCode(c); }).join('');
   }
-  /* eslint-enable no-unused-vars */
 
-  var btn = document.getElementById('contact-phone-btn');
-  var link = document.getElementById('contact-phone-link');
-  if (!btn || !link) return;
+  /* email: char codes in two segments */
+  var _p = [116, 97, 114, 107, 108, 101, 110, 100];
+  var _q = [64, 109, 97, 105, 108, 46, 101, 101];
+  function _em() {
+    return _p.concat(_q).map(function (c) { return String.fromCharCode(c); }).join('');
+  }
 
-  btn.addEventListener('click', function () {
-    var n = _d();
-    link.href = 'tel:' + n;
-    link.textContent = n;
-    link.style.display = '';
-    btn.style.display = 'none';
-  });
+  var phoneBtn = document.getElementById('contact-phone-btn');
+  var phoneLink = document.getElementById('contact-phone-link');
+  if (phoneBtn && phoneLink) {
+    phoneBtn.addEventListener('click', function () {
+      var n = _ph();
+      phoneLink.href = 'tel:' + n;
+      phoneLink.textContent = n;
+      phoneLink.style.display = '';
+      phoneBtn.style.display = 'none';
+    });
+  }
+
+  var emailBtn = document.getElementById('contact-email-btn');
+  var emailLink = document.getElementById('contact-email-link');
+  if (emailBtn && emailLink) {
+    emailBtn.addEventListener('click', function () {
+      var addr = _em();
+      emailLink.href = 'mailto:' + addr;
+      emailLink.textContent = addr;
+      emailLink.style.display = '';
+      emailBtn.style.display = 'none';
+    });
+  }
 })();

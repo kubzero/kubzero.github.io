@@ -4,6 +4,13 @@
   var STORAGE_KEY = 'tarklend-lang';
   var SUPPORTED = ['et', 'ru', 'en', 'uk'];
 
+  /* Footer email: not in HTML; built on click from char-code arrays */
+  var _f1 = [116, 97, 114, 107, 108, 101, 110, 100];
+  var _f2 = [64, 109, 97, 105, 108, 46, 101, 101];
+  function _mail() {
+    return _f1.concat(_f2).map(function (c) { return String.fromCharCode(c); }).join('');
+  }
+
   function getLang() {
     var stored = localStorage.getItem(STORAGE_KEY);
     return stored && SUPPORTED.indexOf(stored) !== -1 ? stored : 'et';
@@ -183,4 +190,11 @@
       dot.classList.add('is-hidden');
     });
   })();
+
+  document.querySelectorAll('.js-email-reveal').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.location.href = 'mailto:' + _mail();
+    });
+  });
 })();

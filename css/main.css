@@ -511,7 +511,8 @@ body {
   text-decoration: underline;
 }
 
-.contact-phone-btn {
+.contact-phone-btn,
+.contact-reveal-btn {
   font-family: inherit;
   font-size: 1.1rem;
   font-weight: 700;
@@ -524,7 +525,8 @@ body {
   transition: background 0.2s, transform 0.15s;
 }
 
-.contact-phone-btn:hover {
+.contact-phone-btn:hover,
+.contact-reveal-btn:hover {
   background: #a85a32;
   transform: translateY(-1px);
 }
