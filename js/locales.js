@@ -35,7 +35,11 @@ window.LOCALES = {
       loading: 'Uudiste laadimine…',
       empty: 'Uudiseid pole.',
       loadFailed: 'Uudiste laadimine ebaõnnestus.',
-      notConfigured: 'Uudiste voog pole seadistatud. Lisa Sanity projekti ID faili'
+      notConfigured: 'Uudiste voog pole seadistatud. Lisa Sanity projekti ID faili',
+      paginationAria: 'Uudiste lehekülgede navigeerimine',
+      prev: 'Eelmine',
+      next: 'Järgmine',
+      pageInfo: 'Leht {current} / {total}'
     },
     tagline: '"TarkLend" – koht, kus lapsed õpivad, mängivad ja kasvavad koos.',
     welcomeLong: 'Tere tulemast lasteklubisse "TarkLend"! "TarkLend" on ruum, kus lapsed õpivad, mängivad ja avastavad teadmiste maailma sõbralikus ja inspireerivas õhkkonnas. Oleme loonud koha, kus õppimine on kerge ja huvitav ning iga laps tunneb end enesekindlalt ja mugavalt.',
@@ -193,7 +197,11 @@ window.LOCALES = {
       loading: 'Загрузка новостей…',
       empty: 'Новостей нет.',
       loadFailed: 'Не удалось загрузить новости.',
-      notConfigured: 'Лента новостей не настроена. Добавьте ID проекта Sanity в файл'
+      notConfigured: 'Лента новостей не настроена. Добавьте ID проекта Sanity в файл',
+      paginationAria: 'Навигация по страницам новостей',
+      prev: 'Назад',
+      next: 'Вперёд',
+      pageInfo: 'Страница {current} / {total}'
     },
     tagline: '"TarkLend" – место, где дети учатся, играют и растут вместе.',
     welcomeLong: 'Добро пожаловать в детский клуб "TarkLend"! "TarkLend" — это пространство, где дети учатся, играют и открывают для себя мир знаний в дружелюбной и вдохновляющей атмосфере. Мы создали место, где обучение проходит легко и интересно, а каждый ребёнок чувствует себя уверенно и комфортно.',
@@ -351,7 +359,11 @@ window.LOCALES = {
       loading: 'Loading news…',
       empty: 'No news yet.',
       loadFailed: 'Failed to load news.',
-      notConfigured: 'News feed is not configured. Add Sanity project ID in file'
+      notConfigured: 'News feed is not configured. Add Sanity project ID in file',
+      paginationAria: 'News pagination',
+      prev: 'Previous',
+      next: 'Next',
+      pageInfo: 'Page {current} / {total}'
     },
     tagline: '"TarkLend" – a place where children learn, play and grow together.',
     welcomeLong: 'Welcome to the "TarkLend" children\'s club! "TarkLend" is a space where children learn, play and discover the world of knowledge in a friendly and inspiring atmosphere. We have created a place where learning is easy and fun, and every child feels confident and comfortable.',
