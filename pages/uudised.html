@@ -53,9 +53,11 @@
       </div>
     </header>
 
-    <main class="main main--page">
+    <main class="main main--page main--news">
       <h1 class="page-title" data-i18n="nav.news">Uudised</h1>
-      <p class="page-placeholder"></p>
+      <div id="news-feed" class="news-feed" aria-live="polite">
+        <p class="news-loading">Uudiste laadimine…</p>
+      </div>
     </main>
 
     <footer class="site-footer">
@@ -78,5 +80,6 @@
   </div>
   <script src="../js/locales.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/sanity-news.js"></script>
 </body>
 </html>
