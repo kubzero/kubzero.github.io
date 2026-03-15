@@ -63,6 +63,13 @@
       var text = getText(loc, key);
       if (text) el.setAttribute('alt', text);
     });
+
+    var titleEl = document.querySelector('title[data-i18n-document-title]');
+    if (titleEl) {
+      var titleKey = titleEl.getAttribute('data-i18n-document-title');
+      var titleText = getText(loc, titleKey);
+      if (titleText) document.title = titleText;
+    }
   }
 
   function getServiceToggleLabels() {
@@ -259,6 +266,28 @@
 
     syncServiceButtonLabels();
     document.addEventListener('tarklend:langChange', syncServiceButtonLabels);
+  })();
+
+  /* Prices page cards – toggle offer details */
+  (function () {
+    var priceCards = document.querySelectorAll('.prices-card--toggle');
+    if (!priceCards.length) return;
+
+    priceCards.forEach(function (card, idx) {
+      var button = card.querySelector('.prices-toggle-btn');
+      var body = card.querySelector('.prices-toggle-body');
+      if (!button || !body) return;
+
+      var bodyId = body.id || ('prices-toggle-body-' + idx);
+      body.id = bodyId;
+      button.setAttribute('aria-controls', bodyId);
+
+      button.addEventListener('click', function () {
+        var isOpen = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+        body.hidden = isOpen;
+      });
+    });
   })();
 
   document.querySelectorAll('.js-email-reveal').forEach(function (el) {
