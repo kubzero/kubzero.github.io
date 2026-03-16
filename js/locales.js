@@ -154,7 +154,7 @@ window.LOCALES = {
     contact: {
       title: 'Kontaktid',
       hoursLabel: 'Tööaeg:',
-      hours: 'E – R, 12.30 – 18.30',
+      hours: 'E – R, 13.30 – 18.30',
       phoneLabel: 'Telefon:',
       viewNumber: 'Näita numbrit',
       viewEmail: 'Näita e-posti',
@@ -316,7 +316,7 @@ window.LOCALES = {
     contact: {
       title: 'Контакты',
       hoursLabel: 'Время работы:',
-      hours: 'Пн – Пт, 12.30 – 18.30',
+      hours: 'Пн – Пт, 13.30 – 18.30',
       phoneLabel: 'Телефон:',
       viewNumber: 'Посмотреть номер',
       viewEmail: 'Показать e-mail',
@@ -478,7 +478,7 @@ window.LOCALES = {
     contact: {
       title: 'Contact',
       hoursLabel: 'Opening hours:',
-      hours: 'Mon – Fri, 12.30 – 18.30',
+      hours: 'Mon – Fri, 13.30 – 18.30',
       phoneLabel: 'Phone:',
       viewNumber: 'View number',
       viewEmail: 'Show email',
