@@ -1,0 +1,15 @@
+{
+  "name": "ByteGlo OÜ",
+  "short_name": "ByteGlo",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#0d6a58",
+  "background_color": "#03382f",
+  "display": "browser",
+  "start_url": "/"
+}
