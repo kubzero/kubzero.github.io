@@ -101,44 +101,86 @@
         return Math.random() * (max - min) + min;
       }
 
-      // Keep a "hole" around the center where the big 404 sits.
-      // We still use CSS masking, but this reduces visual clutter.
-      var holeRadius = 0.22; // fraction of viewport
-      function inCenterHole(x, y) {
-        var dx = x - 0.5;
-        var dy = y - 0.45; // slightly higher
-        return Math.sqrt(dx * dx + dy * dy) < holeRadius;
-      }
+      var holeRadius = 0.22;
+      var cx = 0.5;
+      var cy = 0.45;
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var nodes = [];
+      var perWave = 90;
 
-      var count = 280;
-      for (var i = 0; i < count; i++) {
-        var tries = 0;
-        var x = 0, y = 0;
-        while (tries < 30) {
-          x = Math.random();
-          y = Math.random();
-          if (!inCenterHole(x, y)) break;
-          tries++;
+      function spawnWave(dir, className) {
+        for (var i = 0; i < perWave; i++) {
+          var tries = 0;
+          var x = 0, y = 0;
+          while (tries < 30) {
+            x = Math.random();
+            y = Math.random();
+            var dx0 = x - cx;
+            var dy0 = y - cy;
+            if (Math.sqrt(dx0 * dx0 + dy0 * dy0) >= holeRadius) break;
+            tries++;
+          }
+
+          var nx = (x - cx) * 2.2;
+          var ny = (y - cy) * 2.2;
+          // Hyperbolic paraboloid (saddle) + hyperboloid radial term.
+          var saddle = nx * nx - ny * ny;
+          var radial = Math.asinh(Math.sqrt(nx * nx + ny * ny) * 2.4);
+          // Invert surface for reverse wave so peaks/valleys don't align.
+          var surface = (radial * 1.65 + saddle * 1.35) * dir;
+
+          var span = document.createElement("span");
+          if (className) span.className = className;
+          span.textContent = tokens[(Math.random() * tokens.length) | 0];
+          span.style.left = (x * 100) + "%";
+          span.style.top = (y * 100) + "%";
+          span.style.fontSize = rand(12, 26) + "px";
+
+          var rot = rand(-12, 12);
+          layer.appendChild(span);
+
+          nodes.push({
+            el: span,
+            surface: surface,
+            rot: rot,
+            dir: dir,
+            speed: dir > 0 ? 1.55 : 1.35
+          });
         }
-
-        var span = document.createElement("span");
-        span.textContent = tokens[(Math.random() * tokens.length) | 0];
-        span.style.left = (x * 100) + "%";
-        span.style.top = (y * 100) + "%";
-
-        var size = rand(12, 26);
-        span.style.fontSize = size + "px";
-        span.style.opacity = rand(0.12, 0.28);
-        span.style.filter = "blur(" + rand(0, 0.8) + "px)";
-
-        // Random rotation for code feel (kept in sync with the animation keyframes).
-        var rot = rand(-12, 12) + "deg";
-        span.style.setProperty("--r", rot);
-        span.style.transform = "translate(-50%, -50%) rotate(" + rot + ")";
-        span.style.setProperty("--d", (-rand(0, 6)) + "s");
-
-        layer.appendChild(span);
       }
+
+      // Two equal fields traveling opposite ways on the same surface family.
+      spawnWave(1, "wave-a");
+      spawnWave(-1, "wave-b");
+
+      function paint(tSec) {
+        for (var i = 0; i < nodes.length; i++) {
+          var n = nodes[i];
+          // Opposite dirs: one advances along +surface, the other against it.
+          var phase = n.surface - tSec * n.speed * n.dir;
+          var wave = Math.sin(phase);
+          var gate = Math.max(0, wave);
+          var opacity = 0.03 + gate * 0.28;
+          var lift = wave * -11 * n.dir;
+          var scale = 0.94 + gate * 0.08;
+
+          n.el.style.opacity = opacity.toFixed(3);
+          n.el.style.transform =
+            "translate(-50%, -50%) rotate(" + n.rot + "deg) translateY(" + lift.toFixed(2) + "px) scale(" + scale.toFixed(3) + ")";
+        }
+      }
+
+      if (reduceMotion) {
+        paint(0.8);
+        return;
+      }
+
+      var start = performance.now();
+      function frame(now) {
+        paint((now - start) / 1000);
+        requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
     })();
   </script>
 
@@ -155,21 +197,6 @@
     .app404-code-layer {
       position: absolute;
       inset: -10vh -10vw;
-      /* fade out toward the center */
-      -webkit-mask-image: radial-gradient(
-        ellipse 62% 56% at 50% 45%,
-        transparent 0%,
-        rgba(0, 0, 0, 0.0) 28%,
-        rgba(0, 0, 0, 0.45) 48%,
-        black 78%
-      );
-      mask-image: radial-gradient(
-        ellipse 62% 56% at 50% 45%,
-        transparent 0%,
-        rgba(0, 0, 0, 0.0) 28%,
-        rgba(0, 0, 0, 0.45) 48%,
-        black 78%
-      );
       opacity: 1;
     }
 
@@ -179,19 +206,21 @@
       font-weight: 600;
       letter-spacing: 0.02em;
       transform-origin: center;
-      animation: app404-code-float 5.5s ease-in-out infinite;
-      animation-delay: var(--d, -2s);
+      opacity: 0;
+      will-change: transform, opacity;
     }
 
-    @keyframes app404-code-float {
-      0%,
-      100% {
-        opacity: 0.0;
-        transform: translate(-50%, -50%) rotate(var(--r, 0deg)) translateY(0);
+    .app404-code-layer span.wave-b {
+      color: rgba(170, 230, 255, 0.55);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .app404-code-layer span {
+        will-change: auto;
       }
-      45% {
-        opacity: 0.26;
-        transform: translate(-50%, -50%) rotate(var(--r, 0deg)) translateY(-10px);
+
+      .app404-code-fadein {
+        animation: none;
       }
     }
 
