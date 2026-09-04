@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>App catalog — ByteGlo OÜ</title>
-  <meta name="description" content="Public applications from ByteGlo OÜ. No apps are listed yet.">
+  <meta name="description" content="Public applications from ByteGlo OÜ, including BackNest: USB Photo Backup.">
   <link rel="canonical" href="https://byteglo.com/pages/apps.html">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://byteglo.com/pages/apps.html">
   <meta property="og:title" content="App catalog — ByteGlo OÜ">
-  <meta property="og:description" content="Public applications from ByteGlo OÜ. No apps are listed yet.">
+  <meta property="og:description" content="Public applications from ByteGlo OÜ, including BackNest: USB Photo Backup.">
   <meta name="theme-color" content="#0d6a58">
   <link rel="icon" href="../images/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="../images/favicon.png" type="image/png" sizes="512x512">
   <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" sizes="180x180">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.css?v=apps7">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -56,17 +56,8 @@
       </div>
     </header>
 
-    <main id="content" class="page-main">
-      <p class="section-label type-in" data-i18n="nav.apps">App catalog</p>
-      <h1 class="type-in" data-i18n="apps.heading">App catalog</h1>
-      <p class="lede type-in-delay" data-i18n="apps.intro">Public applications will appear here when they are published. Nothing is listed yet.</p>
-      <ul class="line-list">
-        <li class="type-in-delay">
-          <h2 data-i18n="apps.emptyTitle">No apps listed</h2>
-          <p data-i18n="apps.emptyBody">This catalog is empty on purpose. We do not show placeholder products.</p>
-        </li>
-      </ul>
-      <div class="app-ghost-stage" aria-hidden="true">
+    <main id="content" class="page-main page-main-apps">
+      <div class="app-ghost-bg" aria-hidden="true">
         <div class="app-ghost-grid">
           <div class="ghost-app ghost-app-1">
             <div class="ghost-icon"></div>
@@ -100,6 +91,22 @@
           </div>
         </div>
       </div>
+
+      <p class="section-label type-in" data-i18n="nav.apps">App catalog</p>
+      <h1 class="type-in" data-i18n="apps.heading">App catalog</h1>
+
+      <ul class="app-catalog-grid type-in-delay">
+        <li>
+          <a class="app-card" href="../apps/backnest/">
+            <div class="app-card-icon">
+              <img src="../images/apps/backnest-icon.jpg" alt="" width="56" height="56">
+            </div>
+            <h2 data-i18n="apps.backnestName">BackNest: USB Photo Backup</h2>
+            <p data-i18n="apps.backnestCard">Copy iPhone photos and videos to USB storage. No cloud upload.</p>
+            <span class="app-card-cta" data-i18n="apps.view">View</span>
+          </a>
+        </li>
+      </ul>
     </main>
 
     <footer class="site-footer">

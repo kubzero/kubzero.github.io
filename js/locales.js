@@ -87,7 +87,8 @@ window.LOCALES = {
       important2: "Keep the app open during copying — iOS may pause transfers in the background",
       important3: "Full Photos access is recommended for a complete library backup",
       closing: "Perfect for travel, extra storage, switching phones, or keeping a private offline copy of your memories.",
-      feedback: "Questions or feedback"
+      feedback: "Questions or feedback",
+      screensAria: "App screenshots"
     },
     about: {
       heading: "About",
@@ -220,7 +221,8 @@ window.LOCALES = {
       important2: "Hoia rakendus kopeerimise ajal avatud — iOS võib taustal ülekandeid peatada",
       important3: "Täielik Photos’i juurdepääs on soovitatav kogu teegi varundamiseks",
       closing: "Sobib reisiks, lisamäluks, telefoni vahetamiseks või mälestuste privaatseks võrguühenduseta koopiaks.",
-      feedback: "Küsimused või tagasiside"
+      feedback: "Küsimused või tagasiside",
+      screensAria: "Rakenduse ekraanipildid"
     },
     about: {
       heading: "Meist",
