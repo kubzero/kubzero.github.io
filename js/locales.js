@@ -20,7 +20,9 @@ window.LOCALES = {
       titleBacknestTerms: "Terms of Use — BackNest",
       descBacknestTerms: "Terms of use for BackNest: USB Photo Backup by ByteGlo OÜ.",
       titleBacknestApp: "BackNest: USB Photo Backup — ByteGlo OÜ",
-      descBacknestApp: "BackNest copies iPhone photos and videos to USB storage on device. No cloud upload."
+      descBacknestApp: "BackNest copies iPhone photos and videos to USB storage on device. No cloud upload.",
+      titleGiftbellPrivacy: "Privacy Policy — GiftBell",
+      descGiftbellPrivacy: "Privacy policy for GiftBell by ByteGlo OÜ. On-device birthday reminders; no cloud sync of your contacts; no analytics or advertising SDKs."
     },
     common: {
       skip: "Skip to content",
@@ -130,7 +132,8 @@ window.LOCALES = {
       privacyTitle: "Privacy Policy",
       termsTitle: "Terms of Use",
       backnestPrivacyTitle: "Privacy Policy — BackNest",
-      backnestTermsTitle: "Terms of Use — BackNest"
+      backnestTermsTitle: "Terms of Use — BackNest",
+      giftbellPrivacyTitle: "Privacy Policy — GiftBell"
     }
   },
   et: {
@@ -154,7 +157,9 @@ window.LOCALES = {
       titleBacknestTerms: "Kasutustingimused — BackNest",
       descBacknestTerms: "ByteGlo OÜ rakenduse BackNest: USB Photo Backup kasutustingimused.",
       titleBacknestApp: "BackNest: USB Photo Backup — ByteGlo OÜ",
-      descBacknestApp: "BackNest kopeerib iPhone’i fotod ja videod USB-mälule seadmes. Pilve üleslaadimist ei ole."
+      descBacknestApp: "BackNest kopeerib iPhone’i fotod ja videod USB-mälule seadmes. Pilve üleslaadimist ei ole.",
+      titleGiftbellPrivacy: "Privaatsuspoliitika — GiftBell",
+      descGiftbellPrivacy: "ByteGlo OÜ rakenduse GiftBell privaatsuspoliitika. Sünnipäevameeldetuletused seadmes; kontaktide pilvesünkroniseerimist ei ole."
     },
     common: {
       skip: "Liigu sisu juurde",
@@ -264,7 +269,8 @@ window.LOCALES = {
       privacyTitle: "Privaatsuspoliitika",
       termsTitle: "Kasutustingimused",
       backnestPrivacyTitle: "Privaatsuspoliitika — BackNest",
-      backnestTermsTitle: "Kasutustingimused — BackNest"
+      backnestTermsTitle: "Kasutustingimused — BackNest",
+      giftbellPrivacyTitle: "Privaatsuspoliitika — GiftBell"
     }
   }
 };
