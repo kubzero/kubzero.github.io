@@ -1197,6 +1197,71 @@ body.theme-backnest .footer-line a {
   color: rgba(180, 210, 240, 0.78);
 }
 
+/* GiftBell product page — light pink → light blue, frozen motion */
+body.theme-giftbell {
+  --ink: #1c2240;
+  --muted: rgba(40, 48, 88, 0.72);
+  --line: rgba(120, 110, 180, 0.22);
+  --accent: #5a78f0;
+  --ocean-top: #f7d6e6;
+  --ocean-mid: #d4d8f2;
+  --ocean-bottom: #a9c6ef;
+}
+
+body.theme-giftbell .ocean-blur-a {
+  background: radial-gradient(circle, #f2a8c8 0%, transparent 70%);
+  animation-play-state: paused;
+  animation-delay: -2.2s;
+  transform: translate(12vw, -2%) scale(1.05);
+  opacity: 0.55;
+}
+
+body.theme-giftbell .ocean-blur-b {
+  background: radial-gradient(circle, #9eb0f0 0%, transparent 70%);
+  animation-play-state: paused;
+  animation-delay: -4.5s;
+  transform: translate(-14vw, 6%) scale(1.06);
+  opacity: 0.5;
+}
+
+body.theme-giftbell .ocean-blur-c {
+  background: radial-gradient(circle, #7eb0e8 0%, transparent 72%);
+  animation-play-state: paused;
+  animation-delay: -1.4s;
+  transform: translate(6vw, 10%) scale(0.98);
+  opacity: 0.45;
+}
+
+body.theme-giftbell .section-label,
+body.theme-giftbell .fact-label {
+  color: rgba(70, 78, 120, 0.55);
+}
+
+body.theme-giftbell .site-footer {
+  color: rgba(60, 70, 110, 0.65);
+}
+
+body.theme-giftbell .footer-line a {
+  color: rgba(50, 60, 110, 0.88);
+}
+
+body.theme-giftbell .skip-link {
+  color: #f7f4ff;
+  background: #1c2240;
+}
+
+body.theme-giftbell .app-hero-icon {
+  border-color: rgba(120, 110, 180, 0.28);
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(80, 70, 140, 0.18);
+}
+
+body.theme-giftbell .app-screen img {
+  border-color: rgba(120, 110, 180, 0.22);
+  box-shadow: 0 14px 36px rgba(70, 80, 140, 0.22);
+  background: #eef2fb;
+}
+
 .app-hero {
   display: grid;
   gap: 1.25rem;
@@ -1435,7 +1500,10 @@ body.theme-backnest .footer-line a {
 
   body.theme-backnest .ocean-blur-a,
   body.theme-backnest .ocean-blur-b,
-  body.theme-backnest .ocean-blur-c {
+  body.theme-backnest .ocean-blur-c,
+  body.theme-giftbell .ocean-blur-a,
+  body.theme-giftbell .ocean-blur-b,
+  body.theme-giftbell .ocean-blur-c {
     transform: none;
   }
 }
