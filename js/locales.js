@@ -14,7 +14,7 @@ window.LOCALES = {
       titleContact: "Contact — ByteGlo OÜ",
       descContact: "Contact ByteGlo OÜ in Estonia.",
       titleApps: "App catalog — ByteGlo OÜ",
-      descApps: "Public applications from ByteGlo OÜ, including BackNest and GiftBell.",
+      descApps: "Public applications from ByteGlo OÜ, including BackNest, GiftBell, and Proofo.",
       titleBacknestPrivacy: "Privacy Policy — BackNest",
       descBacknestPrivacy: "Privacy policy for BackNest: USB Photo Backup by ByteGlo OÜ. On-device photo backup; no media upload to our servers.",
       titleBacknestTerms: "Terms of Use — BackNest",
@@ -26,7 +26,13 @@ window.LOCALES = {
       titleGiftbellTerms: "Terms of Use — GiftBell",
       descGiftbellTerms: "Terms of use for GiftBell by ByteGlo OÜ.",
       titleGiftbellApp: "GiftBell — ByteGlo OÜ",
-      descGiftbellApp: "GiftBell: birthday reminders, widgets, and optional on-device wish ideas. Private on your iPhone — no cloud sync."
+      descGiftbellApp: "GiftBell: birthday reminders, widgets, and optional on-device wish ideas. Private on your iPhone — no cloud sync.",
+      titleProofoPrivacy: "Privacy Policy — Proofo",
+      descProofoPrivacy: "Privacy policy for Proofo by ByteGlo OÜ. Offline work documentation on your device; photos and PDFs stay local; no analytics or advertising SDKs.",
+      titleProofoTerms: "Terms of Use — Proofo",
+      descProofoTerms: "Terms of use for Proofo by ByteGlo OÜ.",
+      titleProofoApp: "Proofo — ByteGlo OÜ",
+      descProofoApp: "Proofo: offline work documentation for iPhone. Photos, notes, signatures, and PDF export — private on your device."
     },
     common: {
       skip: "Skip to content",
@@ -62,6 +68,8 @@ window.LOCALES = {
       backnestCard: "Copy iPhone photos and videos to USB storage. No cloud upload.",
       giftbellName: "GiftBell",
       giftbellCard: "Birthday reminders and widgets. Private on your iPhone.",
+      proofoName: "Proofo",
+      proofoCard: "Offline work documentation and PDF export. Private on your iPhone.",
       view: "View",
       backCatalog: "Back to app catalog"
     },
@@ -129,6 +137,37 @@ window.LOCALES = {
       feedback: "Questions or feedback",
       screensAria: "App screenshots"
     },
+    proofo: {
+      name: "Proofo",
+      platform: "iOS · Apple App Store",
+      lead: "Document the job on your iPhone. Photos, notes, signatures, and PDF export — private on your device, no cloud sync.",
+      support: "Support",
+      whyTitle: "Why Proofo",
+      why1: "Capture site photos and notes in one work document",
+      why2: "Optional sketches and party signatures on device",
+      why3: "Export clean PDF packages for clients or records",
+      why4: "Private by design — documents stay on your iPhone",
+      howTitle: "How it works",
+      how1: "Create a work document for the job or site",
+      how2: "Add photos from Camera or Photos, plus notes",
+      how3: "Optionally sketch or collect signatures",
+      how4: "Export a PDF and share it your way",
+      howNote: "Everything runs on your iPhone. ByteGlo does not sync your documents to our servers.",
+      freeTitle: "Free to try",
+      free1: "Create work documents and capture photos",
+      free2: "Limited free PDF exports with watermark",
+      proTitle: "Premium (one-time purchase)",
+      pro1: "Unlimited PDF exports without watermark",
+      pro2: "Full templates and documentation features",
+      pro3: "One-time unlock — no subscription",
+      importantTitle: "Important",
+      important1: "No cloud sync — work documents stay on this iPhone",
+      important2: "PDFs are documentation helpers, not legal certification",
+      important3: "Uninstalling removes local app data (backups you made separately may remain)",
+      closing: "Built for trades and field work — document once, share as PDF, keep control on your device.",
+      feedback: "Questions or feedback",
+      screensAria: "App screenshots"
+    },
     about: {
       heading: "About",
       body: "ByteGlo OÜ is an Estonia-based technology company. We develop software for mobile devices and wearable technologies.",
@@ -171,7 +210,9 @@ window.LOCALES = {
       backnestPrivacyTitle: "Privacy Policy — BackNest",
       backnestTermsTitle: "Terms of Use — BackNest",
       giftbellPrivacyTitle: "Privacy Policy — GiftBell",
-      giftbellTermsTitle: "Terms of Use — GiftBell"
+      giftbellTermsTitle: "Terms of Use — GiftBell",
+      proofoPrivacyTitle: "Privacy Policy — Proofo",
+      proofoTermsTitle: "Terms of Use — Proofo"
     }
   },
   et: {
@@ -189,7 +230,7 @@ window.LOCALES = {
       titleContact: "Kontakt — ByteGlo OÜ",
       descContact: "ByteGlo OÜ kontakt Eestis.",
       titleApps: "Rakenduste kataloog — ByteGlo OÜ",
-      descApps: "ByteGlo OÜ avalikud rakendused, sealhulgas BackNest ja GiftBell.",
+      descApps: "ByteGlo OÜ avalikud rakendused, sealhulgas BackNest, GiftBell ja Proofo.",
       titleBacknestPrivacy: "Privaatsuspoliitika — BackNest",
       descBacknestPrivacy: "ByteGlo OÜ rakenduse BackNest: USB Photo Backup privaatsuspoliitika. Meedia töötlemine seadmes; meediat meie serveritesse ei laadita.",
       titleBacknestTerms: "Kasutustingimused — BackNest",
@@ -201,7 +242,13 @@ window.LOCALES = {
       titleGiftbellTerms: "Kasutustingimused — GiftBell",
       descGiftbellTerms: "ByteGlo OÜ rakenduse GiftBell kasutustingimused.",
       titleGiftbellApp: "GiftBell — ByteGlo OÜ",
-      descGiftbellApp: "GiftBell: sünnipäevameeldetuletused, vidinad ja valikulised seadmesisesed soovid. Privaatne iPhone’is — pilvesünkroniseerimist ei ole."
+      descGiftbellApp: "GiftBell: sünnipäevameeldetuletused, vidinad ja valikulised seadmesisesed soovid. Privaatne iPhone’is — pilvesünkroniseerimist ei ole.",
+      titleProofoPrivacy: "Privaatsuspoliitika — Proofo",
+      descProofoPrivacy: "ByteGlo OÜ rakenduse Proofo privaatsuspoliitika. Töödokumentatsioon seadmes; fotod ja PDF-id jäävad kohalikuks; analüütikat ega reklaami SDK-sid ei ole.",
+      titleProofoTerms: "Kasutustingimused — Proofo",
+      descProofoTerms: "ByteGlo OÜ rakenduse Proofo kasutustingimused.",
+      titleProofoApp: "Proofo — ByteGlo OÜ",
+      descProofoApp: "Proofo: võrguühenduseta töödokumentatsioon iPhone’ile. Fotod, märkmed, allkirjad ja PDF-eksport — privaatne seadmes."
     },
     common: {
       skip: "Liigu sisu juurde",
@@ -237,6 +284,8 @@ window.LOCALES = {
       backnestCard: "Kopeeri iPhone’i fotod ja videod USB-mälule. Pilve üleslaadimist ei ole.",
       giftbellName: "GiftBell",
       giftbellCard: "Sünnipäevameeldetuletused ja vidinad. Privaatne iPhone’is.",
+      proofoName: "Proofo",
+      proofoCard: "Võrguühenduseta töödokumentatsioon ja PDF-eksport. Privaatne iPhone’is.",
       view: "Vaata",
       backCatalog: "Tagasi kataloogi"
     },
@@ -304,6 +353,37 @@ window.LOCALES = {
       feedback: "Küsimused või tagasiside",
       screensAria: "Rakenduse ekraanipildid"
     },
+    proofo: {
+      name: "Proofo",
+      platform: "iOS · Apple App Store",
+      lead: "Dokumenteeri töö iPhone’is. Fotod, märkmed, allkirjad ja PDF-eksport — privaatne seadmes, ilma pilvesünkroniseerimiseta.",
+      support: "Tugi",
+      whyTitle: "Miks Proofo",
+      why1: "Jäädvusta objekti fotod ja märkmed ühes töödokumendis",
+      why2: "Valikulised visandid ja osapoolte allkirjad seadmes",
+      why3: "Ekspordi puhtad PDF-paketid klientidele või arhiivi",
+      why4: "Privaatne disain — dokumendid jäävad sinu iPhone’i",
+      howTitle: "Kuidas see töötab",
+      how1: "Loo töödokument töö või objekti jaoks",
+      how2: "Lisa fotod kaamerast või Photos’ist ning märkmed",
+      how3: "Vajadusel joonista või kogu allkirju",
+      how4: "Ekspordi PDF ja jaga seda oma viisil",
+      howNote: "Kõik töötab sinu iPhone’is. ByteGlo ei sünkroniseeri sinu dokumente meie serveritesse.",
+      freeTitle: "Tasuta proovimiseks",
+      free1: "Loo töödokumente ja jäädvusta fotosid",
+      free2: "Piiratud arv tasuta PDF-eksporte vesimärgiga",
+      proTitle: "Premium (ühekordne ost)",
+      pro1: "Piiramatu PDF-eksport ilma vesimärgita",
+      pro2: "Täielikud mallid ja dokumenteerimisfunktsioonid",
+      pro3: "Ühekordne avamine — tellimust ei ole",
+      importantTitle: "Oluline",
+      important1: "Pilvesünkroniseerimist ei ole — töödokumendid jäävad sellesse iPhone’i",
+      important2: "PDF-id on dokumenteerimise abivahendid, mitte õiguslik sertifikaat",
+      important3: "Rakenduse eemaldamine kustutab kohalikud andmed (eraldi tehtud varukoopiad võivad jääda)",
+      closing: "Loodud käsitöölistele ja välitööle — dokumenteeri korra, jaga PDF-ina, hoia kontroll oma seadmes.",
+      feedback: "Küsimused või tagasiside",
+      screensAria: "Rakenduse ekraanipildid"
+    },
     about: {
       heading: "Meist",
       body: "ByteGlo OÜ on Eestis registreeritud tehnoloogiaettevõte. Arendame tarkvara mobiilseadmetele ja kantavate seadmete tehnoloogiatele.",
@@ -346,7 +426,9 @@ window.LOCALES = {
       backnestPrivacyTitle: "Privaatsuspoliitika — BackNest",
       backnestTermsTitle: "Kasutustingimused — BackNest",
       giftbellPrivacyTitle: "Privaatsuspoliitika — GiftBell",
-      giftbellTermsTitle: "Kasutustingimused — GiftBell"
+      giftbellTermsTitle: "Kasutustingimused — GiftBell",
+      proofoPrivacyTitle: "Privaatsuspoliitika — Proofo",
+      proofoTermsTitle: "Kasutustingimused — Proofo"
     }
   }
 };

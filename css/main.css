@@ -1262,6 +1262,72 @@ body.theme-giftbell .app-screen img {
   background: #eef2fb;
 }
 
+/* Proofo product page — soft teal / documentation feel */
+body.theme-proofo {
+  --ink: #0f1f1c;
+  --muted: rgba(20, 50, 45, 0.72);
+  --line: rgba(15, 118, 110, 0.22);
+  --accent: #0f766e;
+  --ocean-top: #d8efe9;
+  --ocean-mid: #c5ddd8;
+  --ocean-bottom: #9ec5bc;
+}
+
+body.theme-proofo .ocean-blur-a {
+  background: radial-gradient(circle, #7ec4b5 0%, transparent 70%);
+  animation-play-state: paused;
+  animation-delay: -2.2s;
+  transform: translate(12vw, -2%) scale(1.05);
+  opacity: 0.5;
+}
+
+body.theme-proofo .ocean-blur-b {
+  background: radial-gradient(circle, #5a9e94 0%, transparent 70%);
+  animation-play-state: paused;
+  animation-delay: -4.5s;
+  transform: translate(-14vw, 6%) scale(1.06);
+  opacity: 0.45;
+}
+
+body.theme-proofo .ocean-blur-c {
+  background: radial-gradient(circle, #a8d4c8 0%, transparent 72%);
+  animation-play-state: paused;
+  animation-delay: -1.4s;
+  transform: translate(6vw, 10%) scale(0.98);
+  opacity: 0.42;
+}
+
+body.theme-proofo .section-label,
+body.theme-proofo .fact-label {
+  color: rgba(40, 80, 72, 0.55);
+}
+
+body.theme-proofo .site-footer {
+  color: rgba(40, 70, 64, 0.65);
+}
+
+body.theme-proofo .footer-line a {
+  color: rgba(20, 70, 62, 0.88);
+}
+
+body.theme-proofo .skip-link {
+  color: #f4fffc;
+  background: #0f1f1c;
+}
+
+body.theme-proofo .app-hero-icon {
+  border-color: rgba(15, 118, 110, 0.28);
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(15, 80, 70, 0.16);
+}
+
+body.theme-proofo .app-screen img {
+  border-color: rgba(15, 118, 110, 0.22);
+  box-shadow: 0 14px 36px rgba(15, 80, 70, 0.18);
+  background: #e8f4f1;
+}
+
+
 .app-hero {
   display: grid;
   gap: 1.25rem;
@@ -1503,7 +1569,10 @@ body.theme-giftbell .app-screen img {
   body.theme-backnest .ocean-blur-c,
   body.theme-giftbell .ocean-blur-a,
   body.theme-giftbell .ocean-blur-b,
-  body.theme-giftbell .ocean-blur-c {
+  body.theme-giftbell .ocean-blur-c,
+  body.theme-proofo .ocean-blur-a,
+  body.theme-proofo .ocean-blur-b,
+  body.theme-proofo .ocean-blur-c {
     transform: none;
   }
 }
