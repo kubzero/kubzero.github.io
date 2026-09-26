@@ -770,6 +770,13 @@ body[data-depth="5"] {
   outline: none;
 }
 
+.app-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
 .app-card-icon {
   flex: none;
   align-self: flex-start;
@@ -789,6 +796,23 @@ body[data-depth="5"] {
   height: 56px;
   object-fit: cover;
   object-position: center;
+}
+
+.app-card-device {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.app-card-device img {
+  display: block;
+  width: 18px;
+  height: 18px;
 }
 
 .app-card h2 {
@@ -1262,8 +1286,8 @@ body.theme-giftbell .app-screen img {
   background: #eef2fb;
 }
 
-/* Proofo product page — soft teal / documentation feel */
-body.theme-proofo {
+/* Proofacto product page — soft teal / documentation feel */
+body.theme-proofacto {
   --ink: #0f1f1c;
   --muted: rgba(20, 50, 45, 0.72);
   --line: rgba(15, 118, 110, 0.22);
@@ -1273,7 +1297,7 @@ body.theme-proofo {
   --ocean-bottom: #9ec5bc;
 }
 
-body.theme-proofo .ocean-blur-a {
+body.theme-proofacto .ocean-blur-a {
   background: radial-gradient(circle, #7ec4b5 0%, transparent 70%);
   animation-play-state: paused;
   animation-delay: -2.2s;
@@ -1281,7 +1305,7 @@ body.theme-proofo .ocean-blur-a {
   opacity: 0.5;
 }
 
-body.theme-proofo .ocean-blur-b {
+body.theme-proofacto .ocean-blur-b {
   background: radial-gradient(circle, #5a9e94 0%, transparent 70%);
   animation-play-state: paused;
   animation-delay: -4.5s;
@@ -1289,7 +1313,7 @@ body.theme-proofo .ocean-blur-b {
   opacity: 0.45;
 }
 
-body.theme-proofo .ocean-blur-c {
+body.theme-proofacto .ocean-blur-c {
   background: radial-gradient(circle, #a8d4c8 0%, transparent 72%);
   animation-play-state: paused;
   animation-delay: -1.4s;
@@ -1297,36 +1321,95 @@ body.theme-proofo .ocean-blur-c {
   opacity: 0.42;
 }
 
-body.theme-proofo .section-label,
-body.theme-proofo .fact-label {
+body.theme-proofacto .section-label,
+body.theme-proofacto .fact-label {
   color: rgba(40, 80, 72, 0.55);
 }
 
-body.theme-proofo .site-footer {
+body.theme-proofacto .site-footer {
   color: rgba(40, 70, 64, 0.65);
 }
 
-body.theme-proofo .footer-line a {
+body.theme-proofacto .footer-line a {
   color: rgba(20, 70, 62, 0.88);
 }
 
-body.theme-proofo .skip-link {
+body.theme-proofacto .skip-link {
   color: #f4fffc;
   background: #0f1f1c;
 }
 
-body.theme-proofo .app-hero-icon {
+body.theme-proofacto .app-hero-icon {
   border-color: rgba(15, 118, 110, 0.28);
   background: #fff;
   box-shadow: 0 12px 32px rgba(15, 80, 70, 0.16);
 }
 
-body.theme-proofo .app-screen img {
+body.theme-proofacto .app-screen img {
   border-color: rgba(15, 118, 110, 0.22);
   box-shadow: 0 14px 36px rgba(15, 80, 70, 0.18);
   background: #e8f4f1;
 }
 
+/* Shotplant product page — deep purple Mac studio */
+body.theme-shotplant {
+  --ink: #f3ecff;
+  --muted: rgba(210, 196, 240, 0.74);
+  --line: rgba(160, 130, 230, 0.22);
+  --accent: #c4a0ff;
+  --ocean-top: #4b2a8a;
+  --ocean-mid: #2a1858;
+  --ocean-bottom: #12081f;
+}
+
+body.theme-shotplant .ocean-blur-a {
+  background: radial-gradient(circle, #8a5cf0 0%, transparent 70%);
+  animation-play-state: paused;
+  animation-delay: -2.2s;
+  transform: translate(12vw, -2%) scale(1.05);
+  opacity: 0.45;
+}
+
+body.theme-shotplant .ocean-blur-b {
+  background: radial-gradient(circle, #5b3ab8 0%, transparent 70%);
+  animation-play-state: paused;
+  animation-delay: -4.5s;
+  transform: translate(-14vw, 6%) scale(1.06);
+  opacity: 0.4;
+}
+
+body.theme-shotplant .ocean-blur-c {
+  background: radial-gradient(circle, #3a2080 0%, transparent 72%);
+  animation-play-state: paused;
+  animation-delay: -1.4s;
+  transform: translate(6vw, 10%) scale(0.98);
+  opacity: 0.36;
+}
+
+body.theme-shotplant .section-label,
+body.theme-shotplant .fact-label {
+  color: rgba(200, 180, 240, 0.5);
+}
+
+body.theme-shotplant .site-footer {
+  color: rgba(200, 180, 240, 0.55);
+}
+
+body.theme-shotplant .footer-line a {
+  color: rgba(210, 190, 250, 0.82);
+}
+
+body.theme-shotplant .app-hero-icon {
+  border-color: rgba(180, 150, 240, 0.35);
+  background: #1a0f30;
+  box-shadow: 0 12px 32px rgba(20, 8, 40, 0.4);
+}
+
+body.theme-shotplant .app-screen img {
+  border-color: rgba(180, 150, 240, 0.28);
+  box-shadow: 0 14px 36px rgba(20, 8, 40, 0.45);
+  background: #1a0f30;
+}
 
 .app-hero {
   display: grid;
@@ -1412,6 +1495,30 @@ body.theme-proofo .app-screen img {
   border: 1px solid rgba(140, 190, 255, 0.28);
   box-shadow: 0 14px 36px rgba(0, 12, 40, 0.42);
   background: #061428;
+}
+
+.app-screen-wide {
+  width: min(22rem, 82vw);
+}
+
+.app-screen-wide img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.app-platform-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.app-platform-icon {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  flex: none;
+  opacity: 0.85;
 }
 
 .app-bottom-links {
@@ -1570,9 +1677,12 @@ body.theme-proofo .app-screen img {
   body.theme-giftbell .ocean-blur-a,
   body.theme-giftbell .ocean-blur-b,
   body.theme-giftbell .ocean-blur-c,
-  body.theme-proofo .ocean-blur-a,
-  body.theme-proofo .ocean-blur-b,
-  body.theme-proofo .ocean-blur-c {
+  body.theme-proofacto .ocean-blur-a,
+  body.theme-proofacto .ocean-blur-b,
+  body.theme-proofacto .ocean-blur-c,
+  body.theme-shotplant .ocean-blur-a,
+  body.theme-shotplant .ocean-blur-b,
+  body.theme-shotplant .ocean-blur-c {
     transform: none;
   }
 }
