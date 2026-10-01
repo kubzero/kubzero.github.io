@@ -805,8 +805,7 @@ body[data-depth="5"] {
   justify-content: center;
   width: 2rem;
   height: 2rem;
-  color: var(--accent);
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .app-card-device img {
@@ -1411,6 +1410,66 @@ body.theme-shotplant .app-screen img {
   background: #1a0f30;
 }
 
+/* HideRoll product page — deep purple privacy cleaner */
+body.theme-hideroll {
+  --ink: #f0e8ff;
+  --muted: rgba(210, 196, 240, 0.74);
+  --line: rgba(150, 110, 220, 0.22);
+  --accent: #6ee7a0;
+  --ocean-top: #3d1a6e;
+  --ocean-mid: #1f0d3a;
+  --ocean-bottom: #0a0418;
+}
+
+body.theme-hideroll .ocean-blur-a {
+  background: radial-gradient(circle, #7a3fd4 0%, transparent 70%);
+  animation-play-state: paused;
+  animation-delay: -2.2s;
+  transform: translate(12vw, -2%) scale(1.05);
+  opacity: 0.45;
+}
+
+body.theme-hideroll .ocean-blur-b {
+  background: radial-gradient(circle, #4a2088 0%, transparent 70%);
+  animation-play-state: paused;
+  animation-delay: -4.5s;
+  transform: translate(-14vw, 6%) scale(1.06);
+  opacity: 0.4;
+}
+
+body.theme-hideroll .ocean-blur-c {
+  background: radial-gradient(circle, #2a8a5c 0%, transparent 72%);
+  animation-play-state: paused;
+  animation-delay: -1.4s;
+  transform: translate(6vw, 10%) scale(0.98);
+  opacity: 0.28;
+}
+
+body.theme-hideroll .section-label,
+body.theme-hideroll .fact-label {
+  color: rgba(200, 180, 240, 0.5);
+}
+
+body.theme-hideroll .site-footer {
+  color: rgba(200, 180, 240, 0.55);
+}
+
+body.theme-hideroll .footer-line a {
+  color: rgba(210, 190, 250, 0.82);
+}
+
+body.theme-hideroll .app-hero-icon {
+  border-color: rgba(180, 150, 240, 0.35);
+  background: #140828;
+  box-shadow: 0 12px 32px rgba(20, 8, 40, 0.4);
+}
+
+body.theme-hideroll .app-screen img {
+  border-color: rgba(180, 150, 240, 0.28);
+  box-shadow: 0 14px 36px rgba(20, 8, 40, 0.45);
+  background: #140828;
+}
+
 .app-hero {
   display: grid;
   gap: 1.25rem;
@@ -1518,7 +1577,14 @@ body.theme-shotplant .app-screen img {
   width: 1.1rem;
   height: 1.1rem;
   flex: none;
-  opacity: 0.85;
+  opacity: 0.9;
+}
+
+/* White platform SVGs read dark on light product themes */
+body.theme-giftbell .app-platform-icon,
+body.theme-proofacto .app-platform-icon {
+  filter: brightness(0);
+  opacity: 0.5;
 }
 
 .app-bottom-links {
@@ -1682,7 +1748,10 @@ body.theme-shotplant .app-screen img {
   body.theme-proofacto .ocean-blur-c,
   body.theme-shotplant .ocean-blur-a,
   body.theme-shotplant .ocean-blur-b,
-  body.theme-shotplant .ocean-blur-c {
+  body.theme-shotplant .ocean-blur-c,
+  body.theme-hideroll .ocean-blur-a,
+  body.theme-hideroll .ocean-blur-b,
+  body.theme-hideroll .ocean-blur-c {
     transform: none;
   }
 }
