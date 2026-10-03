@@ -117,7 +117,8 @@ window.LOCALES = {
       important3: "Full Photos access is recommended for a complete library backup",
       closing: "Perfect for travel, extra storage, switching phones, or keeping a private offline copy of your memories.",
       feedback: "Questions or feedback",
-      screensAria: "App screenshots"
+      screensAria: "App screenshots",
+      backApp: "Back to BackNest"
     },
     giftbell: {
       name: "GiftBell",
@@ -149,7 +150,8 @@ window.LOCALES = {
       important3: "JSON backup you control; uninstalling removes local data",
       closing: "Perfect for remembering the people who matter — privately, on your iPhone.",
       feedback: "Questions or feedback",
-      screensAria: "App screenshots"
+      screensAria: "App screenshots",
+      backApp: "Back to GiftBell"
     },
     hideroll: {
       name: "HideRoll: Private Photo Cleaner",
@@ -182,7 +184,8 @@ window.LOCALES = {
       important4: "Uninstalling removes local app data",
       closing: "Built for private library cleanup — scan on device, keep findings covered, act when you are ready.",
       feedback: "Questions or feedback",
-      screensAria: "App screenshots"
+      screensAria: "App screenshots",
+      backApp: "Back to HideRoll"
     },
     proofacto: {
       name: "Proofacto",
@@ -214,7 +217,8 @@ window.LOCALES = {
       important4: "Uninstalling removes local app data (backups you made separately may remain)",
       closing: "Built for trades and field work — compose documentation, share as PDF, keep control on your device. You are responsible for how you use exported reports.",
       feedback: "Questions or feedback",
-      screensAria: "App screenshots"
+      screensAria: "App screenshots",
+      backApp: "Back to Proofacto"
     },
     shotplant: {
       name: "Shotplant",
@@ -246,7 +250,8 @@ window.LOCALES = {
       important3: "ByteGlo does not host your projects or proxy AI requests",
       closing: "Built for App Store listing sets — design once, localize fast, export clean.",
       feedback: "Questions or feedback",
-      screensAria: "App screenshots"
+      screensAria: "App screenshots",
+      backApp: "Back to Shotplant"
     },
     about: {
       heading: "About",
@@ -416,7 +421,8 @@ window.LOCALES = {
       important3: "Täielik Photos’i juurdepääs on soovitatav kogu teegi varundamiseks",
       closing: "Sobib reisiks, lisamäluks, telefoni vahetamiseks või mälestuste privaatseks võrguühenduseta koopiaks.",
       feedback: "Küsimused või tagasiside",
-      screensAria: "Rakenduse ekraanipildid"
+      screensAria: "Rakenduse ekraanipildid",
+      backApp: "Tagasi BackNesti"
     },
     giftbell: {
       name: "GiftBell",
@@ -448,7 +454,8 @@ window.LOCALES = {
       important3: "JSON-varukoopia, mida sa kontrollid; rakenduse eemaldamine kustutab kohalikud andmed",
       closing: "Sobib nende meelespidamiseks, kes sulle korda lähevad — privaatselt, sinu iPhone’is.",
       feedback: "Küsimused või tagasiside",
-      screensAria: "Rakenduse ekraanipildid"
+      screensAria: "Rakenduse ekraanipildid",
+      backApp: "Tagasi GiftBelli"
     },
     hideroll: {
       name: "HideRoll: Private Photo Cleaner",
@@ -481,7 +488,8 @@ window.LOCALES = {
       important4: "Rakenduse eemaldamine kustutab kohalikud andmed",
       closing: "Privaatseks teegi korrastamiseks — skanni seadmes, hoia tulemused kaetuna, tegutse kui oled valmis.",
       feedback: "Küsimused või tagasiside",
-      screensAria: "Rakenduse ekraanipildid"
+      screensAria: "Rakenduse ekraanipildid",
+      backApp: "Tagasi HideRolli"
     },
     proofacto: {
       name: "Proofacto",
@@ -513,7 +521,8 @@ window.LOCALES = {
       important4: "Rakenduse eemaldamine kustutab kohalikud andmed (eraldi tehtud varukoopiad võivad jääda)",
       closing: "Loodud käsitöölistele ja välitööle — koosta dokumentatsioon, jaga PDF-ina, hoia kontroll oma seadmes. Teie vastutate eksporditud aruannete kasutamise eest.",
       feedback: "Küsimused või tagasiside",
-      screensAria: "Rakenduse ekraanipildid"
+      screensAria: "Rakenduse ekraanipildid",
+      backApp: "Tagasi Proofactosse"
     },
     shotplant: {
       name: "Shotplant",
@@ -545,7 +554,8 @@ window.LOCALES = {
       important3: "ByteGlo ei majuta sinu projekte ega vahenda AI-päringuid",
       closing: "Loodud App Store’i komplektidele — kujunda korra, lokaliseeri kiiresti, ekspordi puhtalt.",
       feedback: "Küsimused või tagasiside",
-      screensAria: "Rakenduse ekraanipildid"
+      screensAria: "Rakenduse ekraanipildid",
+      backApp: "Tagasi Shotplanti"
     },
     about: {
       heading: "Meist",
