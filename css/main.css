@@ -1470,6 +1470,66 @@ body.theme-hideroll .app-screen img {
   background: #140828;
 }
 
+/* MosaCrypt product page — midnight blue with cipher cyan and violet */
+body.theme-mosacrypt {
+  --ink: #f4f8ff;
+  --muted: rgba(204, 220, 240, 0.76);
+  --line: rgba(92, 174, 255, 0.22);
+  --accent: #66d9ff;
+  --ocean-top: #123462;
+  --ocean-mid: #081a35;
+  --ocean-bottom: #020711;
+}
+
+body.theme-mosacrypt .ocean-blur-a {
+  background: radial-gradient(circle, #1678d2 0%, transparent 70%);
+  animation-play-state: paused;
+  animation-delay: -2.2s;
+  transform: translate(12vw, -2%) scale(1.05);
+  opacity: 0.42;
+}
+
+body.theme-mosacrypt .ocean-blur-b {
+  background: radial-gradient(circle, #2aaeb8 0%, transparent 70%);
+  animation-play-state: paused;
+  animation-delay: -4.5s;
+  transform: translate(-14vw, 6%) scale(1.06);
+  opacity: 0.3;
+}
+
+body.theme-mosacrypt .ocean-blur-c {
+  background: radial-gradient(circle, #7048d8 0%, transparent 72%);
+  animation-play-state: paused;
+  animation-delay: -1.4s;
+  transform: translate(6vw, 10%) scale(0.98);
+  opacity: 0.28;
+}
+
+body.theme-mosacrypt .section-label,
+body.theme-mosacrypt .fact-label {
+  color: rgba(184, 218, 246, 0.55);
+}
+
+body.theme-mosacrypt .site-footer {
+  color: rgba(184, 210, 240, 0.58);
+}
+
+body.theme-mosacrypt .footer-line a {
+  color: rgba(196, 224, 252, 0.85);
+}
+
+body.theme-mosacrypt .app-hero-icon {
+  border-color: rgba(102, 217, 255, 0.34);
+  background: #061225;
+  box-shadow: 0 12px 32px rgba(0, 6, 20, 0.48);
+}
+
+body.theme-mosacrypt .app-screen img {
+  border-color: rgba(102, 217, 255, 0.27);
+  box-shadow: 0 14px 38px rgba(0, 6, 22, 0.52);
+  background: #061225;
+}
+
 .app-hero {
   display: grid;
   gap: 1.25rem;
@@ -1751,7 +1811,10 @@ body.theme-proofacto .app-platform-icon {
   body.theme-shotplant .ocean-blur-c,
   body.theme-hideroll .ocean-blur-a,
   body.theme-hideroll .ocean-blur-b,
-  body.theme-hideroll .ocean-blur-c {
+  body.theme-hideroll .ocean-blur-c,
+  body.theme-mosacrypt .ocean-blur-a,
+  body.theme-mosacrypt .ocean-blur-b,
+  body.theme-mosacrypt .ocean-blur-c {
     transform: none;
   }
 }
