@@ -51,6 +51,7 @@ window.LOCALES = {
       descShotplantApp: "Shotplant: App Store screenshots for iPhone and iPad on Mac. Templates, 3D devices, and optional AI locale translation."
     },
     common: {
+      comingSoon: "Coming soon",
       skip: "Skip to content",
       logoAria: "ByteGlo home",
       mainNavAria: "Primary",
@@ -399,6 +400,7 @@ window.LOCALES = {
       descShotplantApp: "Shotplant: App Store’i ekraanipildid iPhone’ile ja iPadile Mac’is. Mallid, 3D-seadmed ja valikuline AI-keelte tõlge."
     },
     common: {
+      comingSoon: "Peagi",
       skip: "Liigu sisu juurde",
       logoAria: "ByteGlo avaleht",
       mainNavAria: "Peamine",

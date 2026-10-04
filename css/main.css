@@ -1560,6 +1560,36 @@ body.theme-mosacrypt .app-screen img {
   object-fit: cover;
 }
 
+.app-store-badge {
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.75rem;
+}
+
+.app-store-badge img {
+  display: block;
+  width: 245px;
+  height: auto;
+  aspect-ratio: 245 / 82;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.app-store-badge:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 6px;
+}
+
+.app-store-badge[hidden] {
+  display: none;
+}
+
+.app-release-status {
+  margin: 1rem 0 0;
+  font-weight: 600;
+}
+
 .app-hero-copy {
   min-width: 0;
 }
