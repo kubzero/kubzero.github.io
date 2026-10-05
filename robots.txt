@@ -1,0 +1,15 @@
+# Search discovery is independent of permission to train a model.
+User-agent: *
+User-agent: OAI-SearchBot
+User-agent: PerplexityBot
+Allow: /
+Disallow: /_templates/
+Disallow: /_data/
+Disallow: /scripts/
+Disallow: /docs/
+Disallow: /.git/
+
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://byteglo.com/sitemap.xml

@@ -1,26 +1,15 @@
 (function () {
   "use strict";
 
-  var STORAGE_KEY = "byteglo-lang";
   var SUPPORTED = ["en", "et"];
   var cycleTimer = null;
   var cycleIndex = 0;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function getLang() {
-    try {
-      var stored = localStorage.getItem(STORAGE_KEY);
-      if (stored && SUPPORTED.indexOf(stored) !== -1) return stored;
-    } catch (e) {}
-    return "en";
-  }
-
-  function setLang(code) {
-    if (SUPPORTED.indexOf(code) === -1) return;
-    try {
-      localStorage.setItem(STORAGE_KEY, code);
-    } catch (e) {}
-    applyLocale(code);
+    // The URL and static HTML determine the language, including without JS.
+    var code = document.documentElement.lang;
+    return SUPPORTED.indexOf(code) !== -1 ? code : "en";
   }
 
   function getText(obj, key) {
@@ -68,7 +57,8 @@
 
     document.querySelectorAll("[data-lang]").forEach(function (btn) {
       var active = btn.getAttribute("data-lang") === code;
-      btn.setAttribute("aria-pressed", active ? "true" : "false");
+      if (active) btn.setAttribute("aria-current", "page");
+      else btn.removeAttribute("aria-current");
       btn.classList.toggle("is-active", active);
     });
 
@@ -106,12 +96,6 @@
     }, 3400);
   }
 
-  document.querySelectorAll("[data-lang]").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      setLang(btn.getAttribute("data-lang"));
-    });
-  });
-
   applyLocale(getLang());
 
   var _u = [99, 111, 110, 116, 97, 99, 116];
@@ -129,6 +113,14 @@
       a.href = "mailto:" + addr;
       a.textContent = addr;
       btn.replaceWith(a);
+    });
+  });
+  document.querySelectorAll(".home-app-pause").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var paused = button.closest(".home-apps").classList.toggle("is-paused");
+      button.setAttribute("aria-pressed", String(paused));
+      button.setAttribute("aria-label", paused ? button.dataset.resumeLabel : button.dataset.pauseLabel);
+      button.textContent = paused ? "▶" : "Ⅱ";
     });
   });
 })();

@@ -1,0 +1,22 @@
+.DS_Store
+**/.DS_Store
+
+# Local build output and maintenance artifacts
+_site/
+.jekyll-cache/
+.sass-cache/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+*.log
+*.bak
+*.tmp
+
+# Credentials must never enter the repository
+.env
+.env.*
+!.env.example
+*.pem
+*.key

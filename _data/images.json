@@ -1,0 +1,152 @@
+{
+  "/images/logo.png": {
+    "src": "/images/logo.webp",
+    "width": 427,
+    "height": 506
+  },
+  "/images/apps/backnest/shot-01-home.jpg": {
+    "src": "/images/apps/backnest/shot-01-home.webp",
+    "width": 472,
+    "height": 1024
+  },
+  "/images/apps/backnest/shot-02-progress.jpg": {
+    "src": "/images/apps/backnest/shot-02-progress.webp",
+    "width": 470,
+    "height": 1024
+  },
+  "/images/apps/backnest/shot-03-complete.jpg": {
+    "src": "/images/apps/backnest/shot-03-complete.webp",
+    "width": 470,
+    "height": 1024
+  },
+  "/images/apps/backnest/shot-04-howto.jpg": {
+    "src": "/images/apps/backnest/shot-04-howto.webp",
+    "width": 470,
+    "height": 1024
+  },
+  "/images/apps/backnest/shot-05-settings.jpg": {
+    "src": "/images/apps/backnest/shot-05-settings.webp",
+    "width": 470,
+    "height": 1024
+  },
+  "/images/apps/backnest-icon.jpg": {
+    "src": "/images/apps/backnest-icon.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  "/images/apps/giftbell/shot-01.jpg": {
+    "src": "/images/apps/giftbell/shot-01.webp",
+    "width": 473,
+    "height": 1024
+  },
+  "/images/apps/giftbell/shot-02.jpg": {
+    "src": "/images/apps/giftbell/shot-02.webp",
+    "width": 473,
+    "height": 1024
+  },
+  "/images/apps/giftbell/shot-03.jpg": {
+    "src": "/images/apps/giftbell/shot-03.webp",
+    "width": 473,
+    "height": 1024
+  },
+  "/images/apps/giftbell/shot-04.jpg": {
+    "src": "/images/apps/giftbell/shot-04.webp",
+    "width": 473,
+    "height": 1024
+  },
+  "/images/apps/giftbell/shot-05.jpg": {
+    "src": "/images/apps/giftbell/shot-05.webp",
+    "width": 473,
+    "height": 1024
+  },
+  "/images/apps/giftbell-icon.png": {
+    "src": "/images/apps/giftbell-icon.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  "/images/apps/hideroll/shot-01.jpg": {
+    "src": "/images/apps/hideroll/shot-01.webp",
+    "width": 473,
+    "height": 1024
+  },
+  "/images/apps/hideroll/shot-02.jpg": {
+    "src": "/images/apps/hideroll/shot-02.webp",
+    "width": 473,
+    "height": 1024
+  },
+  "/images/apps/hideroll/shot-03.jpg": {
+    "src": "/images/apps/hideroll/shot-03.webp",
+    "width": 473,
+    "height": 1024
+  },
+  "/images/apps/hideroll/shot-04.jpg": {
+    "src": "/images/apps/hideroll/shot-04.webp",
+    "width": 473,
+    "height": 1024
+  },
+  "/images/apps/hideroll-icon.png": {
+    "src": "/images/apps/hideroll-icon.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  "/images/apps/mosacrypt/shot-01.jpg": {
+    "src": "/images/apps/mosacrypt/shot-01.webp",
+    "width": 1284,
+    "height": 2778
+  },
+  "/images/apps/mosacrypt/shot-02.jpg": {
+    "src": "/images/apps/mosacrypt/shot-02.webp",
+    "width": 1284,
+    "height": 2778
+  },
+  "/images/apps/mosacrypt/shot-03.jpg": {
+    "src": "/images/apps/mosacrypt/shot-03.webp",
+    "width": 1284,
+    "height": 2778
+  },
+  "/images/apps/mosacrypt/shot-04.jpg": {
+    "src": "/images/apps/mosacrypt/shot-04.webp",
+    "width": 1284,
+    "height": 2778
+  },
+  "/images/apps/mosacrypt/shot-05.jpg": {
+    "src": "/images/apps/mosacrypt/shot-05.webp",
+    "width": 1284,
+    "height": 2778
+  },
+  "/images/apps/mosacrypt-icon.png": {
+    "src": "/images/apps/mosacrypt-icon.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  "/images/apps/proofacto-icon.png": {
+    "src": "/images/apps/proofacto-icon.webp",
+    "width": 1024,
+    "height": 1024
+  },
+  "/images/apps/shotplant/shot-01.jpg": {
+    "src": "/images/apps/shotplant/shot-01.webp",
+    "width": 1024,
+    "height": 540
+  },
+  "/images/apps/shotplant/shot-02.jpg": {
+    "src": "/images/apps/shotplant/shot-02.webp",
+    "width": 1024,
+    "height": 640
+  },
+  "/images/apps/shotplant/shot-03.jpg": {
+    "src": "/images/apps/shotplant/shot-03.webp",
+    "width": 1024,
+    "height": 640
+  },
+  "/images/apps/shotplant/shot-04.jpg": {
+    "src": "/images/apps/shotplant/shot-04.webp",
+    "width": 1024,
+    "height": 640
+  },
+  "/images/apps/shotplant-icon.png": {
+    "src": "/images/apps/shotplant-icon.webp",
+    "width": 1024,
+    "height": 1024
+  }
+}

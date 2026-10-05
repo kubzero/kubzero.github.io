@@ -263,7 +263,8 @@ body[data-depth="5"] {
   border: 0;
 }
 
-.lang button {
+.lang a {
+  text-decoration: none;
   appearance: none;
   border: 0;
   background: transparent;
@@ -279,15 +280,15 @@ body[data-depth="5"] {
   transition: background 0.25s ease, color 0.25s ease;
 }
 
-.lang button.is-active,
-.lang button[aria-pressed="true"] {
+.lang a.is-active,
+.lang a[aria-current="page"] {
   background: transparent;
   color: var(--accent);
   border-bottom: 1px solid var(--accent);
 }
 
-.lang button:hover,
-.lang button:focus-visible {
+.lang a:hover,
+.lang a:focus-visible {
   color: var(--ink);
 }
 
@@ -1847,4 +1848,69 @@ body.theme-proofacto .app-platform-icon {
   body.theme-mosacrypt .ocean-blur-c {
     transform: none;
   }
+}
+
+/* Static product discovery and answers remain readable without JavaScript. */
+.type-in,
+.type-in-delay {
+  animation: content-in 0.25s ease both;
+}
+@keyframes content-in {
+  from { transform: translateY(6px); }
+  to { transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .type-in,
+  .type-in-delay { animation: none; }
+}
+.home-apps {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  min-width: 0;
+  margin: 0 0 1.25rem;
+}
+.home-app-window { flex: 1; min-width: 0; overflow: clip; touch-action: pan-y; }
+.home-app-track { display: flex; width: max-content; animation: app-roll 35s linear infinite; }
+.home-app-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  display: flex;
+  gap: 0.75rem;
+  flex: 0 0 auto;
+}
+.home-app-list li { flex: 0 0 auto; }
+.home-app-list a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(110, 224, 184, 0.25);
+  border-radius: 1rem;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.home-app-list img { width: 40px; height: 40px; object-fit: cover; border-radius: 0.6rem; }
+.home-app-list a:hover { border-color: var(--ink); }
+.home-app-list a:focus-visible,
+.home-app-pause:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.home-app-pause { border: 0; background: transparent; color: var(--muted); cursor: pointer; padding: 0.75rem; }
+.home-apps:hover .home-app-track,
+.home-apps:focus-within .home-app-track,
+.home-apps.is-paused .home-app-track { animation-play-state: paused; }
+@keyframes app-roll { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .home-app-track { animation: none; }
+  .home-app-track { width: 100%; }
+  .home-app-list { flex: 1; flex-wrap: wrap; }
+  .home-app-list li[aria-hidden="true"] { display: none; }
+  .home-app-copy, .home-app-pause { display: none; }
+}
+.app-faq h3 { margin: 1.5rem 0 0.5rem; font-size: 1.05rem; }
+@media (max-width: 700px) {
+  .app-hero-top { flex-direction: column; align-items: flex-start; }
 }

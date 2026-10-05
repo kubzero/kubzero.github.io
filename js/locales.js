@@ -1,8 +1,8 @@
 window.LOCALES = {
   en: {
     meta: {
-      titleHome: "ByteGlo OÜ — Mobile and wearable software",
-      descHome: "ByteGlo OÜ is an Estonia-based technology company. We design and build software for mobile devices and wearable technologies.",
+      titleHome: "ByteGlo — iPhone and Mac apps",
+      descHome: "Explore ByteGlo apps for iPhone and Mac: USB photo backup, birthday reminders, PDF job reports, local photo tools, and App Store screenshots.",
       titlePrivacy: "Privacy Policy — ByteGlo OÜ",
       descPrivacy: "How ByteGlo OÜ handles personal data on byteglo.com. No analytics or advertising trackers.",
       titleTerms: "Terms of Use — ByteGlo OÜ",
@@ -333,6 +333,7 @@ window.LOCALES = {
     legal: {
       back: "Back to home",
       updated: "Last updated: August 2026",
+      privacyUpdated: "Last updated: October 5, 2026",
       privacyTitle: "Privacy Policy",
       termsTitle: "Terms of Use",
       backnestPrivacyTitle: "Privacy Policy — BackNest",
@@ -350,8 +351,8 @@ window.LOCALES = {
   },
   et: {
     meta: {
-      titleHome: "ByteGlo OÜ — Mobiili- ja kantavate seadmete tarkvara",
-      descHome: "ByteGlo OÜ on Eestis registreeritud tehnoloogiaettevõte. Kujundame ja ehitame tarkvara nutiseadmetele ja kantavatele seadmetele.",
+      titleHome: "ByteGlo — iPhone’i ja Mac’i rakendused",
+      descHome: "ByteGlo rakendused iPhone’ile ja Mac’ile: USB-fotovarundus, sünnipäevameeldetuletused, PDF-tööaruanded, fototööriistad ja App Store’i ekraanipildid.",
       titlePrivacy: "Privaatsuspoliitika — ByteGlo OÜ",
       descPrivacy: "Kuidas ByteGlo OÜ töötleb isikuandmeid saidil byteglo.com. Analüütikat ega reklaamijälgijaid ei kasutata.",
       titleTerms: "Kasutustingimused — ByteGlo OÜ",
@@ -682,6 +683,7 @@ window.LOCALES = {
     legal: {
       back: "Tagasi avalehele",
       updated: "Viimati uuendatud: august 2026",
+      privacyUpdated: "Viimati uuendatud: 5. oktoober 2026",
       privacyTitle: "Privaatsuspoliitika",
       termsTitle: "Kasutustingimused",
       backnestPrivacyTitle: "Privaatsuspoliitika — BackNest",

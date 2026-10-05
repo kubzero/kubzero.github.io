@@ -1,0 +1,29 @@
+# GitHub Pages uses Jekyll to serve the committed static pages.
+# Source templates and maintenance files must not be published.
+exclude:
+  - _templates
+  - _data
+  - scripts
+  - docs
+  - README.md
+  - .DS_Store
+  - images/.DS_Store
+  - apps/.DS_Store
+  - "**/.DS_Store"
+  - "**/*.py"
+  - "**/__pycache__"
+  - "**/*.pyc"
+  - "**/*.log"
+  - "**/*.bak"
+  - "**/*.tmp"
+  - .env
+  - ".env.*"
+  - .venv
+  - venv
+  - node_modules
+  - tests
+  - coverage
+  - .agents
+  - .codex
+  - .github
+  - images/apps/_card-preview.png

@@ -1,0 +1,98 @@
+{
+  "backnest": {
+    "appleId": "6807540441", "released": true, "category": "UtilitiesApplication",
+    "storeUrl": "https://apps.apple.com/us/app/backnest-usb-photo-backup/id6807540441",
+    "faq": {
+      "en": [
+        ["How do I back up iPhone photos to a USB drive?", "Connect a compatible USB drive or SD card, allow Photos access, choose a destination folder, and start the backup in BackNest. Keep the app open during copying."],
+        ["Does BackNest upload my photos to the cloud?", "No. BackNest copies media on your device to the storage you choose. ByteGlo does not receive your photo library. The backup does not delete the originals from Photos."],
+        ["What can I do for free?", "You can back up 20 photos for free. The one-time Pro purchase unlocks unlimited photo backup, video backup, and restoring files from USB to Photos."]
+      ],
+      "et": [
+        ["Kuidas varundada iPhone’i fotosid USB-kettale?", "Ühenda sobiv USB-ketas või SD-kaart, luba Photos’i juurdepääs, vali sihtkaust ja käivita BackNestis varundamine. Hoia rakendus kopeerimise ajal avatud."],
+        ["Kas BackNest laadib fotod pilve?", "Ei. BackNest kopeerib meedia sinu seadmest sinu valitud mälule. ByteGlo ei saa sinu fotokogu. Varundamine ei kustuta originaale Photos’ist."],
+        ["Mida saab tasuta teha?", "Tasuta saab varundada 20 fotot. Ühekordne Pro-ost avab piiramatu fotovarunduse, videovarunduse ja failide taastamise USB-lt Photos’i."]
+      ]
+    }
+  },
+  "giftbell": {
+    "appleId": "6808957115", "released": true, "category": "LifestyleApplication",
+    "storeUrl": "https://apps.apple.com/us/app/id6808957115",
+    "faq": {
+      "en": [
+        ["Do birthday reminders need an AI model?", "No. Birthday reminders and widgets work without the optional AI model. Wish and gift-idea generation runs on your iPhone after an optional model download of about 2.3 GB."],
+        ["Are my contacts uploaded for AI birthday wishes?", "No. Wish generation runs on your device. GiftBell does not upload your contacts for ideas or sync birthday data to a ByteGlo cloud account."],
+        ["Is GiftBell a subscription?", "No. The free tier supports up to six birthday contacts and limited features. Premium is a one-time unlock for unlimited birthday contacts, wish and gift ideas, and Contacts import."]
+      ],
+      "et": [
+        ["Kas sünnipäevameeldetuletused vajavad AI-mudelit?", "Ei. Meeldetuletused ja vidinad töötavad valikulise AI-mudelita. Soovide ja kingiideede loomine toimub iPhone’is pärast umbes 2,3 GB mudeli allalaadimist."],
+        ["Kas kontaktid laaditakse AI-soovide jaoks üles?", "Ei. Soovide loomine toimub seadmes. GiftBell ei laadi kontakte ideede jaoks üles ega sünkroniseeri sünnipäevaandmeid ByteGlo pilvekontoga."],
+        ["Kas GiftBellil on tellimus?", "Ei. Tasuta tase toetab kuni kuut sünnipäevakontakti ja piiratud funktsioone. Premium avatakse ühekordse ostuga ning võimaldab piiramatult kontakte, soove, kingiideid ja Contacts’i importi."]
+      ]
+    }
+  },
+  "hideroll": {
+    "appleId": "6816748922", "released": false, "category": "UtilitiesApplication",
+    "storeUrl": "https://apps.apple.com/ee/app/id6816748922",
+    "faq": {
+      "en": [
+        ["Does HideRoll send photos to an AI server?", "No. HideRoll scans photos and videos on your device with local Core ML models. ByteGlo does not upload or receive your photo library."],
+        ["Can I review photos before hiding or deleting them?", "Yes. Findings stay covered until you preview them. Classification can produce false positives, so review results before acting. Deleting media from Photos may be permanent."],
+        ["Is HideRoll available to download?", "HideRoll is coming soon. The App Store download link will be enabled on this website after release."]
+      ],
+      "et": [
+        ["Kas HideRoll saadab fotod AI-serverisse?", "Ei. HideRoll skannib fotosid ja videoid seadmes kohalike Core ML mudelitega. ByteGlo ei laadi sinu fotokogu üles ega võta seda vastu."],
+        ["Kas saan fotosid enne peitmist või kustutamist üle vaadata?", "Jah. Leitud failid jäävad kaetuks, kuni avad eelvaate. Tuvastus võib anda valepositiivseid tulemusi, seega vaata failid enne tegutsemist üle. Photos’ist kustutamine võib olla jäädav."],
+        ["Kas HideRoll on allalaadimiseks saadaval?", "HideRoll ilmub peagi. App Store’i allalaadimislink avatakse sellel veebisaidil pärast väljalaset."]
+      ]
+    }
+  },
+  "mosacrypt": {
+    "appleId": "6817930088", "released": false, "category": "UtilitiesApplication",
+    "storeUrl": "https://apps.apple.com/ee/app/id6817930088",
+    "faq": {
+      "en": [
+        ["How does MosaCrypt encrypt a photo?", "Choose or capture a photo and set a password. MosaCrypt encrypts the photo on your device and carries the encrypted data in a lossless PNG that you can save or share."],
+        ["Can ByteGlo recover a forgotten password?", "No. ByteGlo does not receive your password or encryption keys. Keep the password and an unmodified, lossless copy of the encrypted PNG; editing or compression may prevent recovery."],
+        ["Is MosaCrypt available to download?", "MosaCrypt is coming soon. The App Store download link will be enabled on this website after release."]
+      ],
+      "et": [
+        ["Kuidas MosaCrypt fotot krüptib?", "Vali või pildista foto ja määra parool. MosaCrypt krüptib foto seadmes ning paigutab krüpteeritud andmed kadudeta PNG-sse, mida saad salvestada või jagada."],
+        ["Kas ByteGlo saab unustatud parooli taastada?", "Ei. ByteGlo ei saa sinu parooli ega krüptovõtmeid. Hoia alles parool ja muutmata kadudeta PNG; muutmine või tihendamine võib taastamise võimatuks teha."],
+        ["Kas MosaCrypt on allalaadimiseks saadaval?", "MosaCrypt ilmub peagi. App Store’i allalaadimislink avatakse sellel veebisaidil pärast väljalaset."]
+      ]
+    }
+  },
+  "proofacto": {
+    "appleId": "6814627608", "released": true, "category": "BusinessApplication",
+    "storeUrl": "https://apps.apple.com/ee/app/id6814627608",
+    "faq": {
+      "en": [
+        ["Can I create PDF job reports on my iPhone?", "Yes. Proofacto combines job photos, notes, optional sketches, and on-device acknowledgements into documents you can export as PDF and share yourself."],
+        ["Are my work documents stored on ByteGlo servers?", "No. Proofacto is offline-first and does not sync your work documents to ByteGlo servers. You control the PDFs you export and share. Uninstalling removes local app data."],
+        ["Does a Proofacto report certify legal evidence?", "No. Proofacto is document-composing software, not a legal certification, notarization, or evidence service. You are responsible for checking the report and how it is used."]
+      ],
+      "et": [
+        ["Kas saan iPhone’is PDF-tööaruandeid koostada?", "Jah. Proofacto koondab tööfotod, märkmed, valikulised visandid ja seadmesisesed kinnitused dokumentideks, mida saad PDF-ina eksportida ja ise jagada."],
+        ["Kas töödokumendid salvestatakse ByteGlo serveritesse?", "Ei. Proofacto töötab peamiselt võrguühenduseta ega sünkroniseeri töödokumente ByteGlo serveritesse. Sina kontrollid eksporditud ja jagatud PDF-e. Rakenduse eemaldamine kustutab kohalikud andmed."],
+        ["Kas Proofacto aruanne kinnitab õiguslikku tõendit?", "Ei. Proofacto on dokumentide koostamise tarkvara, mitte õigusliku sertifitseerimise, notariaadi ega tõenditeenus. Sina vastutad aruande kontrollimise ja kasutamise eest."]
+      ]
+    }
+  },
+  "shotplant": {
+    "appleId": "6815846106", "released": false, "category": "DesignApplication",
+    "storeUrl": "https://apps.apple.com/ee/app/id6815846106",
+    "faq": {
+      "en": [
+        ["Can I make iPhone and iPad App Store screenshots on a Mac?", "Yes. Shotplant is designed for App Store screenshot sets with iPhone and iPad canvases, 3D device frames, style templates, and PNG export. It requires macOS 14 or later."],
+        ["Does AI translation upload my screenshots?", "No. Optional translation uses your own OpenAI or Gemini account and sends only the title and subtitle text you choose. Screenshot images and project files are not uploaded by ByteGlo."],
+        ["Is Shotplant available to download?", "Shotplant is coming soon. The App Store download link will be enabled on this website after release."]
+      ],
+      "et": [
+        ["Kas saan Mac’is iPhone’i ja iPadi App Store’i ekraanipilte teha?", "Jah. Shotplant on mõeldud App Store’i ekraanipiltide komplektide loomiseks iPhone’i ja iPadi lõuendite, 3D-seadmeraamide, stiilimallide ja PNG-ekspordiga. Vajalik on macOS 14 või uuem."],
+        ["Kas AI-tõlge laadib ekraanipildid üles?", "Ei. Valikuline tõlge kasutab sinu OpenAI või Gemini kontot ja saadab ainult sinu valitud pealkirja ning alapealkirja teksti. ByteGlo ei laadi ekraanipilte ega projektifaile üles."],
+        ["Kas Shotplant on allalaadimiseks saadaval?", "Shotplant ilmub peagi. App Store’i allalaadimislink avatakse sellel veebisaidil pärast väljalaset."]
+      ]
+    }
+  }
+}
